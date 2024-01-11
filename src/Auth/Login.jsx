@@ -1,8 +1,11 @@
 // import { Button, Card, Checkbox, Label, TextInput } from "flowbite-react";
 
+import { Button } from "flowbite-react";
 import Layout from "../Layout/Layout";
+import { useNavigate, useNavigation } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
   return (
     <Layout>
       <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
@@ -56,6 +59,10 @@ function Login() {
                   </div>
                 </div>
               </div>
+            </div>
+            {/* //Registration */}
+            <div>
+              <button onClick={()=>{navigate('/signup')}}>Sign up</button>
             </div>
           </div>
         </div>

@@ -4,3 +4,12 @@
 
 @import "react-alice-carousel/lib/alice-carousel.css";
 @import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
+
+.container {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
